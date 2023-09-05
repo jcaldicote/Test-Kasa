@@ -1,0 +1,56 @@
+.message {
+  color: #ff6060;
+  text-align: center;
+  margin: 5rem;
+  &__h1 {
+    font-size: 288px;
+    margin: 0;
+    padding: 0;
+  }
+  &__error {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  &__back {
+    font-size: 18px;
+    color: #ff6060;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .message {
+    margin: 10rem 3rem;
+    &__h1 {
+      font-size: 150px;
+      font-weight: 700;
+    }
+    &__error {
+      font-size: 26px;
+      font-weight: 500;
+      margin: 0 0 6rem;
+    }
+    &__back {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .message {
+    margin: 10rem 3rem;
+    &__h1 {
+      font-size: 96px;
+      font-weight: 700;
+    }
+    &__error {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 0 6rem;
+    }
+    &__back {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

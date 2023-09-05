@@ -1,0 +1,135 @@
+.logement {
+  margin: 4rem 5rem;
+  color: #ff6060;
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: 100%;
+
+    &_title {
+      margin-bottom: 16px;
+      h2 {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 3px 0;
+      }
+      &__location {
+        display: inline-block;
+        font-size: 18px;
+        margin: 3px 0px 10px 0px;
+        font-weight: 500;
+      }
+    }
+    .tag {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &_name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+
+      span {
+        font-size: 18px;
+        width: 60%;
+        font-weight: 500;
+        text-align: end;
+      }
+    }
+  }
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .count-box {
+      margin: 10px;
+      .count-star {
+        margin: 0.3em;
+        font-size: 24px;
+        .not-filled {
+          color: #e3e3e3;
+        }
+      }
+    }
+  }
+  &__collapse {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    &_item {
+      flex-basis: 50%;
+    }
+  }
+  .Collapse__content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logement {
+    color: #ff6060;
+    margin: 2rem 5rem;
+    &-details {
+      flex-direction: column;
+    }
+    &__main {
+      width: auto;
+      margin-bottom: 0.6rem;
+      flex-wrap: wrap;
+      &_title {
+        h2 {
+          font-size: 18px;
+        }
+        &__location {
+          font-size: 14px;
+        }
+      }
+      .tag {
+        font-size: 10px;
+      }
+      &_name {
+        span {
+          font-size: 12px;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    &__stats {
+      flex-direction: row-reverse;
+
+      .count-box {
+        .count-star {
+          margin: 0.3em;
+          font-size: 15px;
+        }
+      }
+    }
+    &__collapse {
+      flex-direction: column;
+      &_item {
+        flex-basis: 50%;
+      }
+    }
+    .Collapse__content {
+      font-size: 15px;
+    }
+  }
+}

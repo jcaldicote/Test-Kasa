@@ -1,0 +1,18 @@
+.collapse-container {
+  margin: auto 12rem 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .collapse-container {
+    margin: 1rem;
+  }
+  .Collapse {
+    &__element h1 {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    &__content {
+      font-size: 16px;
+    }
+  }
+}

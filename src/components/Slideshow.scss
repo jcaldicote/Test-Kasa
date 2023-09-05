@@ -1,0 +1,50 @@
+.arrow {
+  &_left {
+    position: absolute;
+    margin-top: 8rem;
+    font-size: 100px;
+    color: #fff;
+    cursor: pointer;
+  }
+  &_right {
+    position: absolute;
+    margin-top: 8rem;
+    right: 5rem;
+    font-size: 100px;
+    color: #fff;
+    cursor: pointer;
+  }
+  img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    margin: 1rem 0;
+    height: 415px;
+    border-radius: 10px;
+  }
+  .count {
+    width: calc(100% - 10rem);
+    text-align: center;
+    margin-top: 23rem;
+    position: absolute;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .arrow {
+    &_left {
+      font-size: 70px;
+      margin-top: 11rem;
+    }
+    &_right {
+      font-size: 70px;
+      margin-top: 11rem;
+    }
+    .count {
+      display: none;
+    }
+  }
+}

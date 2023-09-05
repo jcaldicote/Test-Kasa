@@ -1,0 +1,44 @@
+.Collapse {
+  &__element {
+    margin-bottom: 2em;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #ff6060;
+    font-size: 24px;
+    padding: 10px 20px 10px 15px;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+  }
+  &__chevron {
+    font-size: 800;
+    transition: all 0.3s;
+  }
+
+  &.is--active &__chevron {
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    color: #ff6060;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    border-radius: 10px 10px 5px 5px;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: 0.3s height;
+  }
+  &.is--active &__content {
+    height: var(--sectionHeight);
+  }
+
+  p {
+    margin: 0;
+    padding: 1rem;
+  }
+}
