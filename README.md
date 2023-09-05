@@ -3,6 +3,7 @@
 Projet 6 de la formation Developpeur Web OpenClassRooms
 
 **Version hébergée**: https://jcaldicote.github.io/Test-Kasa/
+
 **Code source**: https://github.com/jcaldicote/Test-Kasa
 
 ## Mission
